@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Note-Taking App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style></style>
+  <body>
+    <div class="wrapper">
+      <div class="all-notes" id="all">
+        <div class="header">
+          All Notes
+        </div>
+        <div class="colors right" id="colors"></div>
+        <hr />
+        <br />
+        <div id="messageSuccess"></div>
+        <div id="notes"></div>
+        <br />
+        <hr />
+        <button onclick="toggleElements()">
+          <i class="fa fa-plus"></i> Note
+        </button>
+      </div>
+
+      <div id="add" class="remove-element">
+        <div class="header">
+          New Note
+        </div>
+        <div id="messageError"></div>
+        <form onsubmit="event.preventDefault(); addNote();">
+          <textarea rows="8" class="new-note-textarea" id="newNote"></textarea>
+          <input type="submit" value="SAVE" />
+        </form>
+      </div>
+
+      <div id="edit" class="remove-element">
+        <div class="header">
+          Edit Note
+        </div>
+        <div id="messageError"></div>
+        <form onsubmit="event.preventDefault(); updateNote();">
+          <textarea
+            rows="8"
+            class="new-note-textarea"
+            id="editedNote"
+          ></textarea>
+          <input type="hidden" class="hidden" id="" />
+          <input type="submit" value="UPDATE" />
+        </form>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

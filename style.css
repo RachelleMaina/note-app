@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Charm|Delius|Dosis|Lateef&display=swap');
+body {
+  background: #eee;
+  font-family: 'Dosis', sans-serif;
+  color: #58595b;
+}
+*:focus {
+  outline: none;
+}
+span {
+  display: block;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #efefef;
+}
+.fa {
+  display: inline-block;
+}
+.right {
+  float: right;
+}
+.wrapper {
+  background: #fff;
+  width: 40%;
+  margin: 20px auto;
+  padding: 30px 30px 40px;
+  border-radius: 5px;
+}
+.header {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #9d8f8f;
+}
+.title {
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #333;
+}
+.all-notes {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.title-list-wrapper {
+  border-bottom: 1px solid #eee;
+  background: #9d8f8f;
+  color: #fff;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  overflow: auto;
+}
+.title-list-wrapper:hover {
+  opacity: 0.8;
+}
+.title-list,
+.trash {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+.new-note-textarea {
+  color: #58595b;
+  border-radius: 4px;
+  line-height: 34px;
+  font-size: 20px;
+  padding: 5px 0px 0px 10px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 3px,
+    transparent 36px,
+    #6d6b67 37px,
+    #6d6b67 37px
+  );
+  width: 100%;
+}
+
+input[type='submit'],
+button {
+  font-size: 16px;
+  margin-left: 83%;
+  margin-top: 30px;
+  padding: 10px;
+  background: #9d8f8f;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+}
+input[type='submit']:hover,
+button:hover {
+  opacity: 0.8;
+}
+.message-error {
+  background: #f2dede;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #a94645;
+  color: #a94645;
+  margin-bottom: 10px;
+}
+.message-success {
+  background: #dff0d8;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #3b763d;
+  color: #3b763d;
+  margin-bottom: 10px;
+}
+.remove-element {
+  display: none;
+}
+
+.colors {
+  display: inline-block;
+}
+.color {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+}
